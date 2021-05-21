@@ -22,6 +22,17 @@ class Solution{
 	              }
 	          }
 	      }
+	      //This Also works
+	      /*for(int i=0;i<n-1;i++){
+	      	   dp[i] = arr[i];
+	      
+	           for(int j=i+1;j<n;j++){
+	               if(arr[i]<arr[j]){
+	                   dp[j] = max(dp[j],dp[i]+arr[j]);
+	               }
+	           }
+	       }
+	       */
 	      int max_=INT_MIN;
 	      for(int i=0;i<n;i++)
 	      max_=max(max_,dp[i]);
