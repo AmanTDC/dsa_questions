@@ -88,14 +88,15 @@ int main(){
 
 	for(int i=0;i<=n;i++){
 		for(int j=0;j<=i;j++){
-			if(j==0)
-			//cout<<str.substr(j,i-j);
+			//if(j==0)
+			//cout<<dict[str.substr(j,i-j)];
 			if(dp[j]&&dict[str.substr(j,i-j)]){
 				dp[i] = 1;
 				break;
 			}
 		}
-		cout<<dp[i]<<" ";
+		//cout<<dp[i]<<" ";
 	}
+	cout<<dp[n];
 
 }
